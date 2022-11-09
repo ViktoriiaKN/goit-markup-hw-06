@@ -223,6 +223,15 @@
               <use href="./images/icons.svg#linkedin"></use>
             </svg></a></li>
           </ul></div></div>
+          <div>
+            <form name="email-form"><p class="join-us"><b>Підпишіться на розсилку</b></p>
+            <label for="email-footer" class="email-footer"></label>
+        <input type="email" name="email-footer" placeholder="E-mail" id="email-footer">
+         <button type="submit" class="application-button">Підписатися<svg width="24" height="24">
+          <use href="./images/icons.svg#icon-send"></use>
+         </svg></button></form>
+           
+          </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -237,7 +246,10 @@
         <input type="email" name="email" id="email">
 
         <label for="comment" class="name-aplication">Коментар</label>
-        <input type="text" name="comment" id="comment">
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+        <input type="checkbox" name="" value="сonditions" id="сonditions"/>
+        <label for="сonditions" class="conditions">Погоджуюся з россилкою та приймаю <a href="#"><span class="conditions-text">Умови договору</span></a></label>
 
         <button type="submit" class="application-button">Відправити</button>
         </form>
