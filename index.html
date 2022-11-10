@@ -193,7 +193,7 @@
     </main>
     <footer class="section-footer">
       <div class="container container-footer">
-        <div><a href="./index.html" class="text-decoration logo-link-footer"><span class="logo-color">Web</span><span class="studio-footer-color">Studio</span></a>
+        <div class="footer-contacts"><a href="./index.html" class="text-decoration logo-link-footer"><span class="logo-color">Web</span><span class="studio-footer-color">Studio</span></a>
     <address class="addres-footer">
       <ul class="list">
         <li class="footer-li">
@@ -208,7 +208,7 @@
         <li class="footer-li"><a href="tel:+380961111111" class="text-decoration tel-footer">+38 096 111 11 11</a></li>
       </ul>
     </address></div>
-<div><p class="join-us"><b>ПРИЄДНУЙТЕСЬ</p>
+<div class="footer-socials"><p class="join-us"><b>ПРИЄДНУЙТЕСЬ</p>
 <ul class="list icon-footer-socials">
             <li><a class="icon-footer" href="#"><svg class="footer-icon-li" width="20" height="20">
               <use href="./images/icons.svg#instagram"></use>
@@ -222,34 +222,32 @@
             <li><a class="icon-footer" href="#"><svg class="footer-icon-li" width="20" height="20">
               <use href="./images/icons.svg#linkedin"></use>
             </svg></a></li>
-          </ul></div></div>
-          <div>
-            <form name="email-form"><p class="join-us"><b>Підпишіться на розсилку</b></p>
-            <label for="email-footer" class="email-footer"></label>
-        <input type="email" name="email-footer" placeholder="E-mail" id="email-footer">
-         <button type="submit" class="application-button">Підписатися<svg width="24" height="24">
+          </ul></div>
+            <form name="email-form" class="form-footer"><p class="join-us"><b>Підпишіться на розсилку</b></p>
+            <label for="email-footer" ></label>
+        <input class="email-footer" type="email" name="email-footer" placeholder="E-mail" id="email-footer">
+         <button type="submit" class="application-button">Підписатися<svg class="icon-submit" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
-         </svg></button></form>
-           
-          </div>
+         </svg></button></form></div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="js-speaker-form">
+        <form class="form js-speaker-form">
+          <p class="form-field">
           <label for="application" class="name-aplication">Ім'я</label>
-          <input type="text" name="application" id="application">
-
+          <input class="input-form" type="text" name="application" id="application"></p>
+<p class="form-field">
         <label for="tel" class="name-aplication">Телефон</label>
-        <input type="tel" name="tel" id="tel">
-
+        <input class="input-form" type="tel" name="tel" id="tel"></p>
+<p class="form-field">
         <label for="email" class="name-aplication">Пошта</label>
-        <input type="email" name="email" id="email">
-
+        <input class="input-form" type="email" name="email" id="email"></p>
+<p class="form-field">
         <label for="comment" class="name-aplication">Коментар</label>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-
-        <input type="checkbox" name="" value="сonditions" id="сonditions"/>
+        <textarea class="input-form" name="comment" id="comment" placeholder="Введіть текст" cols="30" rows="10"></textarea></p>
+        <p class="form-field">
         <label for="сonditions" class="conditions">Погоджуюся з россилкою та приймаю <a href="#"><span class="conditions-text">Умови договору</span></a></label>
+         <input type="checkbox" name="" value="сonditions" id="сonditions"/></p>
 
         <button type="submit" class="application-button">Відправити</button>
         </form>
