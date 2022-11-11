@@ -832,6 +832,7 @@ height: 50px;
 margin-right: 12px;
 background-color: var(--section-hero-color);
 border-color: var(--btn-color);
+color: var(--white-color);
 } 
 
 .application-button-footer {
@@ -931,6 +932,7 @@ outline: 1px solid tomato;
 }
 
 .form-field {
+  position: relative;
   display: block;
   margin-bottom: 10px;
   display: flex;
@@ -960,6 +962,17 @@ font-size: 12px;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
 
+}
+
+.icon-application {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white-color);
 }
 
 .conditions {
