@@ -950,7 +950,11 @@ color: var(--btn-color)
 
 }
 
-input::placeholder {
+.name-aplication:focus-within {
+  border: var(--active-color);
+}
+
+.input::placeholder {
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
@@ -1000,6 +1004,11 @@ letter-spacing: 0.03em;
 font-size: 14px;
 line-height: calc(24 / 14);
 letter-spacing: 0.03em;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
 }
 
 .application-button {
