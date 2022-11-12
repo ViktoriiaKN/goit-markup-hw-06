@@ -224,9 +224,10 @@
               <use href="./images/icons.svg#linkedin"></use>
             </svg></a></li>
           </ul></div>
-        <p class="join-us"><b>Підпишіться на розсилку</b></p>
+          <div>
+        <p class="join-us">Підпишіться на розсилку</p>
             <form name="email-form" class="form-footer">
-            <label for="email-footer" ></label>
+            <label for="email-footer"></label>
         <input class="email-footer" type="email" name="email-footer" placeholder="E-mail" id="email-footer">
          <button type="submit" class="application-button-footer">Підписатися<svg class="icon-submit" width="24" height="24">
           <use href="./images/icons.svg#icon-send"></use>
@@ -235,37 +236,41 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <button class="close-modal" data-modal-close><svg class="close-svg" width="18" height="18">
+          <use href="./images/icons.svg#close"></use>
+        </svg></button>
+        <p class="modal-header">Залиште свої дані, ми вам передзвонимо</p>
         <form class="form js-speaker-form">
-          <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
+          
           <label for="application" class="name-aplication">Ім'я</label>
-          <p class="form-field">
+          <div class="form-field">
 <svg class="icon-application" width="18" height="18">
             <use href="./images/icons.svg#person-black"></use>
           </svg> 
 
-          <input class="input-form" type="text" name="application" id="application"></p>
+          <input class="input-form" type="text" name="application" id="application"></div>
 
 
           <label for="tel" class="name-aplication">Телефон</label>
-<p class="form-field">
+<div class="form-field">
 <svg class="icon-application" width="18" height="18">
           <use href="./images/icons.svg#phone-black"></use>
         </svg>
-        <input class="input-form" type="tel" name="tel" id="tel"></p>
+        <input class="input-form" type="tel" name="tel" id="tel"></div>
 
         
          <label for="email" class="name-aplication">Пошта</label>
-<p class="form-field">
+<div class="form-field">
 <svg class="icon-application" width="18" height="18">
           <use href="./images/icons.svg#email-black"></use>
         </svg>
-  <input class="input-form" type="email" name="email" id="email"></p>
+  <input class="input-form" type="email" name="email" id="email"></div>
 
-  <p class="form-field">
+  <div class="form-field">
         <label for="comment" class="name-aplication">Коментар</label>
-        <textarea class="input-form textarea" name="comment" id="comment" placeholder="Введіть текст" cols="30" rows="10"></textarea></p>
+        <textarea class="textarea" name="comment" id="comment" placeholder="Введіть текст" cols="30" rows="10"></textarea></div>
         
-        <p class="form-field-for">
+        <div class="form-field-for">
         <label for="сonditions" class="conditions">
           <input class="checkbox" type="checkbox" name="checkbox" value="сonditions" id="сonditions"/>
           <span class="conditions-text">Погоджуюся з россилкою та приймаю</span><a class="form-agreement-link" href="#">Умови договору</a></label>
@@ -273,11 +278,9 @@
 <div class="submit-button">
  <button type="submit" class="application-button">Відправити</button>
 </div>
-       
-        </form>
-        <button class="close-modal" data-modal-close><svg class="close-svg" width="18" height="18">
-          <use href="./images/icons.svg#close"></use>
-        </svg></button>
+
+</form>
+        
       </div>
     </div>
     <script src="./js/modal.js"></script>
