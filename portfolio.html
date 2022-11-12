@@ -152,7 +152,7 @@
     </main>
      <footer class="section-footer">
       <div class="container container-footer">
-        <div><a href="./index.html" class="text-decoration logo-link-footer"><span class="logo-color">Web</span><span class="studio-footer-color">Studio</span></a>
+        <div class="footer-contacts"><a href="./index.html" class="text-decoration logo-link-footer"><span class="logo-color">Web</span><span class="studio-footer-color">Studio</span></a>
     <address class="addres-footer">
       <ul class="list">
         <li class="footer-li">
@@ -167,7 +167,7 @@
         <li class="footer-li"><a href="tel:+380961111111" class="text-decoration tel-footer">+38 096 111 11 11</a></li>
       </ul>
     </address></div>
-<div><p class="join-us"><b>ПРИЄДНУЙТЕСЬ</p>
+<div class="footer-socials"><p class="join-us"><b>ПРИЄДНУЙТЕСЬ</p>
 <ul class="list icon-footer-socials">
             <li><a class="icon-footer" href="#"><svg class="footer-icon-li" width="20" height="20">
               <use href="./images/icons.svg#instagram"></use>
@@ -181,8 +181,29 @@
             <li><a class="icon-footer" href="#"><svg class="footer-icon-li" width="20" height="20">
               <use href="./images/icons.svg#linkedin"></use>
             </svg></a></li>
-          </ul></div></div>
+          </ul></div>
+          <p class="join-us "><b>Підпишіться на розсилку</b></p>
+            <form name="email-form" class="form-footer">
+            <label for="email-footer" ></label>
+        <input class="email-footer" type="email" name="email-footer" placeholder="E-mail" id="email-footer">
+         <button type="submit" class="application-button-footer">Підписатися<svg class="icon-submit" width="24" height="24">
+          <use href="./images/icons.svg#icon-send"></use>
+         </svg></button></form></div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script>
+        (() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+
+                e.currentTarget.reset();
+            });
+        })();
+    </script>
   </body>
   </body>
 </html>
