@@ -1014,6 +1014,10 @@ letter-spacing: 0.01em;
   background-color: var(--white-color);
 }
 
+.icon-application:focus {
+  fill: var(--active-color);
+}
+
 .conditions {
   display: flex;
   align-items: center;
