@@ -953,12 +953,7 @@ color: var(--nav-color);
 font-size: 12px;
 line-height: calc(14 / 12);
 letter-spacing: 0.01em;
-color: var(--btn-color)
-
-}
-
-.input-form ~ .icon-application:focus-visible {
-  fill: var(--active-color);
+color: var(--btn-color);
 }
 
 .form-field-for {
@@ -985,6 +980,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .input-form {
+  position: relative;
   font-family: inherit;
   padding: 10px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -997,6 +993,7 @@ letter-spacing: 0.01em;
 
 .input-form:focus-visible {
   outline: 1px solid var(--active-color);
+  fill: var(--active-color);
 }
 
 .textarea {
@@ -1038,8 +1035,9 @@ letter-spacing: 0.01em;
   background-color: var(--white-color);
 }
 
-.icon-application:focus-within {
+.icon-application:focus {
   fill: var(--active-color);
+  outline: transparent;
 }
 
 .conditions {
