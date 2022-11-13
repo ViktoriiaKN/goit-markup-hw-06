@@ -957,7 +957,7 @@ color: var(--btn-color)
 
 }
 
-.input-form ~ .icon-application:focus {
+.input-form ~ .icon-application:focus-visible {
   fill: var(--active-color);
 }
 
